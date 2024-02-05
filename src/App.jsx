@@ -9,20 +9,30 @@ import './App.css'
 import { getAllStarships } from '../services/sw-api'
 
 function App() {
+
+  
   
   const[starshipList, setStarshipList] = useState([])
 
   useEffect(() =>{
     const fetchStarshipList = async () => {
       const starshipData = await getAllStarships()
-      setStarshipList(starshipData)
+      setStarshipList(starshipData.results)
     }
-    fetchStarshipList
+    fetchStarshipList()
   }, [])
+
+  if(!starshipList.length) return <h1>Loading...</h1>
 
   return (
     <>
-
+      <div className='main-body'>
+        <h1>STAR WARS STARSHIPS</h1>
+        <div className='starship-list'>
+          {starshipList.map((starship, idx) =>
+            <div className="starship" key={idx}>{starship.name}</div>)}
+        </div>
+      </div>
     </>
   )
 }

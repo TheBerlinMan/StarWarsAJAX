@@ -1,0 +1,19 @@
+.main-body{
+  text-align: center;
+}
+
+.starship-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.starship{
+  font-weight: 600;
+  font-size: 24px;
+  margin: 20px;
+  width: 200px;
+  height: auto;
+  padding: 60px;
+  border-radius: 20px;
+  background-color: rgb(61, 139, 115);
+}
