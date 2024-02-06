@@ -1,0 +1,17 @@
+.main-body{
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.details{
+  background-color: rgb(61, 139, 115);
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.details > a{
+  color: white;
+}

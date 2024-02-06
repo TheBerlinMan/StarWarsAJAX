@@ -5,6 +5,12 @@
 .starship-list{
   display: flex;
   flex-wrap: wrap;
+  ;
+}
+
+.starship > a {
+  text-decoration: none;
+  color: white;
 }
 
 .starship{
@@ -16,4 +22,7 @@
   padding: 60px;
   border-radius: 20px;
   background-color: rgb(61, 139, 115);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

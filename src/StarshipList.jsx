@@ -24,6 +24,13 @@ function StarshipList() {
 
   if(!starshipList.length) return <h1>Loading...</h1>
 
+  // const starshipId = starshipList.map(starship => {
+  //   const urlStr = starship.url
+  //   const id = urlStr.charAt(urlStr.length - 2)
+  //   console.log(id);
+  //   return id
+  // })
+
   return (
     <>
       <div className='main-body'>
@@ -31,7 +38,7 @@ function StarshipList() {
         <div className='starship-list'>
           {starshipList.map((starship, idx) =>
             <div className="starship" key={idx}>
-              {starship.name}
+              <Link to={`/starships/${starship.name}`}>{starship.name}</Link>
             </div>)}
         </div>
       </div>

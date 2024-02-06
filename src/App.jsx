@@ -6,6 +6,8 @@ import './App.css'
 
 //components
 import StarshipList from './StarshipList'
+import StarshipDetails from './StarshipDetails'
+
 
 
 
@@ -15,9 +17,9 @@ function App() {
 
   return (
     <>
-      <StarshipList />
       <Routes>
         <Route path='/' element={<StarshipList/>}/>
+        <Route path='/starships/:starshipId' element={<StarshipDetails/>}/>
       </Routes>
       
     </>

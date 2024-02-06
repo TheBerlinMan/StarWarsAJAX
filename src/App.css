@@ -1,5 +1,8 @@
 .main-body{
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
 }
 
 .starship-list{
